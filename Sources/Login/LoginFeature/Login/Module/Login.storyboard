@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ggp-9y-xhh">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="yry-GZ-KEF">
+            <objects>
+                <viewController storyboardIdentifier="Login" id="ggp-9y-xhh" customClass="LoginViewController" customModule="Login" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jxx-dd-lEG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="rJb-ta-KiW">
+                                <rect key="frame" x="62.5" y="269" width="250" height="129"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="129" id="Oh4-xL-pgD"/>
+                                    <constraint firstAttribute="width" constant="250" id="miq-nR-gJj"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SmU-8b-qLp" customClass="FolksamButton" customModule="FolksamUI">
+                                <rect key="frame" x="50" y="708.5" width="275" height="50"/>
+                                <color key="backgroundColor" name="FolksamColors/green1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Kuq-TV-WFW"/>
+                                </constraints>
+                                <state key="normal" title="Logga in med BankID">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginAction:" destination="ggp-9y-xhh" eventType="touchUpInside" id="6N2-ob-01G"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JTe-94-pzU">
+                                <rect key="frame" x="50" y="780" width="49" height="31"/>
+                            </switch>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group" translatesAutoresizingMaskIntoConstraints="NO" id="Sq4-ya-Ecu">
+                                <rect key="frame" x="20" y="303.5" width="335" height="249"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="249" id="QWG-LE-5Is"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Spara personnummer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZO-MB-f3S">
+                                <rect key="frame" x="105" y="785" width="170" height="21"/>
+                                <color key="backgroundColor" name="Blue2"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="FolksamColors/Blue1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Personnummer" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="lkn-Sq-Zd9">
+                                <rect key="frame" x="50" y="602.5" width="275" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2qc-V7-2Qe"/>
+                                </constraints>
+                                <color key="textColor" name="FolksamColors/Blue1"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="pnrChanged:" destination="ggp-9y-xhh" eventType="editingChanged" id="f1e-Lu-kaF"/>
+                                </connections>
+                            </textField>
+                            <activityIndicatorView opaque="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="peY-3y-rcn">
+                                <rect key="frame" x="0.0" y="-57" width="414" height="818"/>
+                                <color key="backgroundColor" name="FolksamColors/Blue2"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JfG-TH-Tql"/>
+                        <color key="backgroundColor" name="Blue2"/>
+                        <constraints>
+                            <constraint firstItem="Sq4-ya-Ecu" firstAttribute="leading" secondItem="JfG-TH-Tql" secondAttribute="leading" constant="20" id="3Os-ch-5xR"/>
+                            <constraint firstItem="JfG-TH-Tql" firstAttribute="trailing" secondItem="peY-3y-rcn" secondAttribute="trailing" id="4FZ-vd-Znr"/>
+                            <constraint firstItem="JfG-TH-Tql" firstAttribute="bottom" secondItem="peY-3y-rcn" secondAttribute="bottom" id="EMQ-vx-9DP"/>
+                            <constraint firstItem="JTe-94-pzU" firstAttribute="top" secondItem="lkn-Sq-Zd9" secondAttribute="bottom" constant="10" id="F7C-ye-t5L"/>
+                            <constraint firstItem="rJb-ta-KiW" firstAttribute="centerX" secondItem="JfG-TH-Tql" secondAttribute="centerX" id="FvH-Tn-jXK"/>
+                            <constraint firstItem="rJb-ta-KiW" firstAttribute="centerY" secondItem="JfG-TH-Tql" secondAttribute="centerY" id="KfB-QA-FST"/>
+                            <constraint firstItem="peY-3y-rcn" firstAttribute="leading" secondItem="JfG-TH-Tql" secondAttribute="leading" id="OIp-KM-tuh"/>
+                            <constraint firstItem="lkn-Sq-Zd9" firstAttribute="top" secondItem="rJb-ta-KiW" secondAttribute="bottom" constant="204.5" id="One-lR-0zS"/>
+                            <constraint firstItem="SmU-8b-qLp" firstAttribute="leading" secondItem="JfG-TH-Tql" secondAttribute="leading" constant="50" id="ZT4-Zc-8Tm"/>
+                            <constraint firstItem="peY-3y-rcn" firstAttribute="top" secondItem="JfG-TH-Tql" secondAttribute="top" id="gas-Sd-ylX"/>
+                            <constraint firstItem="lkn-Sq-Zd9" firstAttribute="leading" secondItem="JfG-TH-Tql" secondAttribute="leading" constant="50" id="nOn-oQ-VI7"/>
+                            <constraint firstItem="JfG-TH-Tql" firstAttribute="trailing" secondItem="Sq4-ya-Ecu" secondAttribute="trailing" constant="20" id="pFe-cH-iQf"/>
+                            <constraint firstItem="SmU-8b-qLp" firstAttribute="top" secondItem="JTe-94-pzU" secondAttribute="bottom" constant="15" id="qFa-HL-bzx"/>
+                            <constraint firstItem="lkn-Sq-Zd9" firstAttribute="top" secondItem="Sq4-ya-Ecu" secondAttribute="bottom" constant="50" id="rFe-wZ-jg2"/>
+                            <constraint firstItem="JTe-94-pzU" firstAttribute="leading" secondItem="JfG-TH-Tql" secondAttribute="leading" constant="50" id="rdz-jg-bYs"/>
+                            <constraint firstItem="kZO-MB-f3S" firstAttribute="centerY" secondItem="JTe-94-pzU" secondAttribute="centerY" id="sy2-S8-fPF"/>
+                            <constraint firstItem="kZO-MB-f3S" firstAttribute="leading" secondItem="JTe-94-pzU" secondAttribute="trailing" constant="10" id="u11-Dn-H0T"/>
+                            <constraint firstItem="JfG-TH-Tql" firstAttribute="trailing" secondItem="SmU-8b-qLp" secondAttribute="trailing" constant="50" id="vbN-50-puM"/>
+                            <constraint firstItem="JfG-TH-Tql" firstAttribute="trailing" secondItem="lkn-Sq-Zd9" secondAttribute="trailing" constant="50" id="xgZ-mP-5So"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bankidButton" destination="SmU-8b-qLp" id="1Fd-dF-Z90"/>
+                        <outlet property="buttonBottomSafeArea" destination="One-lR-0zS" id="DDk-iK-rg8"/>
+                        <outlet property="folksamLogo" destination="rJb-ta-KiW" id="DnV-H3-nfk"/>
+                        <outlet property="loadingView" destination="peY-3y-rcn" id="m9o-wD-rXT"/>
+                        <outlet property="logoCenterY" destination="KfB-QA-FST" id="T7y-7n-mxj"/>
+                        <outlet property="logoWidth" destination="miq-nR-gJj" id="r7m-PR-1IA"/>
+                        <outlet property="pnrTextField" destination="lkn-Sq-Zd9" id="fwS-zY-lgc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u8p-fF-79j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-700" y="26.785714285714285"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="SmU-8b-qLp">
+            <size key="intrinsicContentSize" width="146" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="Group" width="315" height="294"/>
+        <image name="logo" width="164" height="36"/>
+        <namedColor name="Blue2">
+            <color red="0.0" green="0.62352941176470589" blue="0.89411764705882357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FolksamColors/Blue1">
+            <color red="0.039215686274509803" green="0.27450980392156865" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FolksamColors/Blue2">
+            <color red="0.0" green="0.62352941176470589" blue="0.89411764705882357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FolksamColors/green1">
+            <color red="0.69019607843137254" green="0.79607843137254897" blue="0.043137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

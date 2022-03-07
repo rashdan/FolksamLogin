@@ -1,0 +1,43 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Apollo",
+        "repositoryURL": "https://github.com/apollographql/apollo-ios.git",
+        "state": {
+          "branch": null,
+          "revision": "d93568fb58f3eed95c2a0068d830a39a6e9d6c97",
+          "version": "0.50.0"
+        }
+      },
+      {
+        "package": "FolksamCommon",
+        "repositoryURL": "https://rashdan@bitbucket.org/folksamfuturelab/folksamcommon.git",
+        "state": {
+          "branch": null,
+          "revision": "d3dd8a7962d075040a5f7a95a638a176ae0d0183",
+          "version": "0.1.1"
+        }
+      },
+      {
+        "package": "FolksamCore",
+        "repositoryURL": "https://rashdan@bitbucket.org/folksamfuturelab/folksamcore.git",
+        "state": {
+          "branch": null,
+          "revision": "a99948f7d545b72a6a893faacf569831447cfd25",
+          "version": "0.0.1"
+        }
+      },
+      {
+        "package": "SQLite.swift",
+        "repositoryURL": "https://github.com/stephencelis/SQLite.swift.git",
+        "state": {
+          "branch": null,
+          "revision": "5f5ad81ac0d0a0f3e56e39e646e8423c617df523",
+          "version": "0.13.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
