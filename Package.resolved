@@ -6,25 +6,25 @@
         "repositoryURL": "https://github.com/apollographql/apollo-ios.git",
         "state": {
           "branch": null,
-          "revision": "d93568fb58f3eed95c2a0068d830a39a6e9d6c97",
-          "version": "0.50.0"
+          "revision": "cb5f1ce6105e4b197cf973c915d51f7941840388",
+          "version": "0.51.0"
         }
       },
       {
         "package": "FolksamCommon",
-        "repositoryURL": "https://rashdan@bitbucket.org/folksamfuturelab/folksamcommon.git",
+        "repositoryURL": "https://github.com/rashdan/FolksamCommon.git",
         "state": {
           "branch": null,
-          "revision": "d3dd8a7962d075040a5f7a95a638a176ae0d0183",
+          "revision": "3d2ea5908f31b1103abeccd5661da45f979a16f2",
           "version": "0.1.1"
         }
       },
       {
         "package": "FolksamCore",
-        "repositoryURL": "https://rashdan@bitbucket.org/folksamfuturelab/folksamcore.git",
+        "repositoryURL": "https://github.com/rashdan/FolksamCore.git",
         "state": {
           "branch": null,
-          "revision": "a99948f7d545b72a6a893faacf569831447cfd25",
+          "revision": "13812af0c085b40175758bf795edce1fca030b47",
           "version": "0.0.1"
         }
       },
