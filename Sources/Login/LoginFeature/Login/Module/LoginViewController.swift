@@ -8,6 +8,7 @@
 import FolksamCore
 import FolksamCommon
 import UIKit
+import Foundation
 
 public protocol LoginDelegate: AnyObject {
     func loginViewController(loginSuccessful: Bool)
@@ -69,7 +70,7 @@ public class LoginViewController: UIViewController {
     }
 
     public static func make(apiService: LoginServiceProtocol, mainAppDelegate: LoginDelegate) -> LoginViewController {
-        guard let viewController = UIStoryboard(name: "Login", bundle: Bundle(for: Self.self)).instantiateInitialViewController() as? LoginViewController else { fatalError() }
+        guard let viewController = UIStoryboard(name: "Login", bundle: Bundle.module).instantiateInitialViewController() as? LoginViewController else { fatalError() }
         viewController.apiService = apiService
         viewController.mainAppDelegate = mainAppDelegate
         return viewController
