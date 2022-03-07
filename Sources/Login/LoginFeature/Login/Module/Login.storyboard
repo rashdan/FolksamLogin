@@ -24,7 +24,7 @@
                                     <constraint firstAttribute="width" constant="250" id="miq-nR-gJj"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SmU-8b-qLp" customClass="FolksamButton" customModule="FolksamUI">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SmU-8b-qLp" customClass="FolksamButton" customModule="FolksamCommon">
                                 <rect key="frame" x="50" y="708.5" width="275" height="50"/>
                                 <color key="backgroundColor" name="FolksamColors/green1"/>
                                 <constraints>
