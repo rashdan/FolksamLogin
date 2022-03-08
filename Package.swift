@@ -23,7 +23,7 @@ let package = Package(
         .package(name: "FolksamCore",
                  url: "https://github.com/rashdan/FolksamCore.git", .upToNextMajor(from: "0.0.1")),
         .package(name: "FolksamCommon",
-                     url: "https://github.com/rashdan/FolksamCommon.git", .upToNextMajor(from: "0.1.2"))
+                     url: "https://github.com/rashdan/FolksamCommon.git", .upToNextMajor(from: "0.1.3"))
         
         //https://rashdan@bitbucket.org/folksamfuturelab/folksamcore.git
         //https://rashdan@bitbucket.org/folksamfuturelab/folksamcommon.git
